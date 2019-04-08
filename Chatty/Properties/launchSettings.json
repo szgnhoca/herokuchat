@@ -13,8 +13,8 @@
       "launchBrowser": true,
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development",
-        "MONGODB_URI": "mongodb://heroku_v1dd36mb:2o6ebrbnca5geuh2ek2p8tifq6@ds047945.mlab.com:47945/heroku_v1dd36mb",
-        "DATABASE_URL": "postgres://jtoxzmgpgtbqgv:3cda75394a5789d33c5e55d6d960882529896f62893e01f791edf6f72a4a89a3@ec2-54-75-230-253.eu-west-1.compute.amazonaws.com:5432/d4hdf469v0kbou"
+        //"MONGODB_URI": "mongodb://heroku_v1dd36mb:2o6ebrbnca5geuh2ek2p8tifq6@ds047945.mlab.com:47945/heroku_v1dd36mb",
+        //"DATABASE_URL": "postgres://jtoxzmgpgtbqgv:3cda75394a5789d33c5e55d6d960882529896f62893e01f791edf6f72a4a89a3@ec2-54-75-230-253.eu-west-1.compute.amazonaws.com:5432/d4hdf469v0kbou"
       }
     },
     "Chatty": {
