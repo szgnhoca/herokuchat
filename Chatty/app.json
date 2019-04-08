@@ -1,0 +1,12 @@
+{
+  "name": "herokuchat",
+  "description": "Ritmus Heroku Demo Chat",
+  "keywords": [
+    "app-cloud"
+  ],
+  "repository": "https://github.com/szgnhoca/herokuchat",
+  "addons": [
+    "heroku-postgresql",
+    "mongolab"
+  ]
+}
