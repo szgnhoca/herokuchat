@@ -5,6 +5,11 @@
     "app-cloud"
   ],
   "repository": "https://github.com/szgnhoca/herokuchat",
+  "buildpacks": [
+    {
+      "url": "https://github.com/jincod/dotnetcore-buildpack"
+    }
+  ],
   "addons": [
     "heroku-postgresql",
     "mongolab"
