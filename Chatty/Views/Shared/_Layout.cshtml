@@ -1,23 +1,27 @@
 ﻿<!DOCTYPE html>
-<html lang="en">
+<html lang="tr">
 <head>
     <meta charset="UTF-8">
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
-    <link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css">
     <link rel="stylesheet" href="https://bootswatch.com/4/lux/bootstrap.css">
     <title>Chatty</title>
 </head>
 <body>
     <nav class="navbar navbar-light bg-light">
-        <span class="navbar-brand mb-0 h5">Chatty</span><span class="mb-0 text-black-50">@User.Identity.Name</span>
+        <span class="navbar-brand mb-0 h5">Chatty</span>
+        <h4 class="btn mb-0">@User.Identity.Name</h4>
+        <span class="mb-0 text-black-50"><a class="btn btn-danger" asp-action="Logout" asp-controller="Account">Çıkış</a></span>
     </nav>
     <div class="container">
         @RenderBody()
     </div>
-    <script src="lib/jquery/dist/jquery.js"></script>
-    <script src="lib/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="~/lib/jquery/dist/jquery.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.16.0/jquery.validate.min.js"></script>
+    <script src="https://ajax.aspnetcdn.com/ajax/jquery.validation.unobtrusive/3.2.6/jquery.validate.unobtrusive.min.js"></script>
     <script src="~/lib/signalr/dist/browser/signalr.js"></script>
     @*<script src="~/lib/signalr-protocol-msgpack/dist/browser/signalr-protocol-msgpack.min.js"></script>*@
     @RenderSection("scripts", false)
