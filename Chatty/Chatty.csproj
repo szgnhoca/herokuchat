@@ -19,7 +19,7 @@
 
   <ItemGroup>
     <Reference Include="Vektora.Authentication">
-      <HintPath>..\Vektora.Authentication.dll</HintPath>
+      <HintPath>..\Sample.Authentication.dll</HintPath>
     </Reference>
   </ItemGroup>
 
