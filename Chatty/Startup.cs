@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 using Chatty.Helpers;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -67,6 +68,14 @@ namespace Chatty
             });
             app.UseStaticFiles();
             app.UseMvcWithDefaultRoute();
+
+            using (var serviceScope = app.ApplicationServices.GetService<IServiceScopeFactory>().CreateScope())
+            {
+                KaleUstaPortalContext context = serviceScope.ServiceProvider.GetRequiredService<KaleUstaPortalContext>();
+                int pendingMigrationCount = context.Database.GetPendingMigrations().Count();
+                if (pendingMigrationCount > 0)
+                    context.Database.Migrate();
+            }
         }
     }
 
