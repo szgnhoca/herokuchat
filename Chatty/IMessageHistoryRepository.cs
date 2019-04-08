@@ -37,7 +37,7 @@ namespace Chatty
         {
             Guid[] guidMembers = Array.ConvertAll(members.OrderBy(s => s).ToArray(), Guid.Parse);
             Expression<Func<Conversation, bool>> filter = document => document.Members == guidMembers || document.Members == guidMembers.Reverse();
-            Conversation conversation = await ConversationCollection.Find(filter).SingleOrDefaultAsync();
+            Conversation conversation = await ConversationCollection.Find(filter).FirstOrDefaultAsync();
             if (conversation is null)
             {
                 Conversation conversationToAdd = new Conversation
