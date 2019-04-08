@@ -11,22 +11,22 @@
 </head>
 <body>
     <nav class="navbar navbar-light bg-light">
-        <span class="navbar-brand mb-0 h5">
-            <img src="https://ritmus.com/wp-content/uploads/ritmus-logo-170x80-px.png" alt="ritmus" height="70" />
-          
+        <span class="navbar-brand mb-0 h5 text-center" style="font-size:30px;">
+            <img src="https://ritmus.com/wp-content/uploads/ritmus-logo-170x80-px.png" alt="ritmus" height="70"  style="padding-right:10% !important"/>
             CHATTY
+            
         </span>
         
         <h4 class="btn mb-0">@User.Identity.Name</h4>
         <span class="mb-0 text-black-50"><a class="btn btn-danger" asp-action="Logout" asp-controller="Account">Çıkış</a></span>
     </nav>
     <div class="container">
-        <div class="d-flex justify-content-center row h-100 p-5">
+        @*<div class="d-flex justify-content-center row h-100 p-5">
             <div class="card-col-12">
                 <img src="https://c1.sfdcstatic.com/content/dam/web/en_us/www/images/home/logo-salesforce.svg" height="75" alt="salesforce" />
                 <img src="https://cdn-images-1.medium.com/max/1200/1*w2RAR48UbSAYv-6y_V-cdA.png" alt="heroku" height="75">
             </div>
-        </div>
+        </div>*@
             @RenderBody()
         </div>
     <script src="~/lib/jquery/dist/jquery.js"></script>
