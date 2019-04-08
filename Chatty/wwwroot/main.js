@@ -16,7 +16,7 @@ $(function () {
 
     $('body').on('click', 'a.list-group-item[data-user-id]', function (e) {
         const $user = $(e.currentTarget);
-        const = $('.counter', $user).text('');
+        $('.counter', $user).text('');
         const $userId = $user.data('user-id');
         const $template = $('#chat-item-template').html()
             .replace("{userId}", $userId)
